@@ -27,7 +27,7 @@ static void timeout1(void *parameter)
     rt_kprintf("periodic timer is timeout %d\n", cnt);
 
     /* 运行第10次，停止周期定时器 */
-    if (cnt++ >= 9)
+    if (cnt++ >= 10)
     {
         rt_timer_stop(timer1);
         rt_kprintf("periodic timer was stopped! \n");
